@@ -36,37 +36,25 @@
 
 <body>
     <!-- ******HEADER****** -->
-
-	<p id="text"></p>
-
-	<script type="text/javascript">
-		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		var element = document.getElementById('text');
-		if (isMobile) {
-  			element.innerHTML = "You are using Mobile";
-		} else {
-			element.innerHTML = "You are using Desktop";
-		}
-	</script>
     <header class="header">
         <div class="container clearfix">
             <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
             <div class="profile-content float-left">
                 <h1 class="name">Kartik Patel</h1>
-                <h2 class="desc">Full Stack Developer</h2>
+                <h2 class="desc">Mobile/Backend Developer</h2>
                 <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/kp67201"><i
+                    <li id="twitterIcon" class="list-inline-item"><a href="https://twitter.com/kp67201"><i
                                 class="fab fa-twitter"></i></a></li>
-                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li> -->
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/kartik-patel-1747a5125"><i
                                 class="fab fa-linkedin-in"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/kp67201/"><i
                                 class="fab fa-github-alt"></i></a></li>
                     <li class="list-inline-item"><a href="https://stackoverflow.com/users/10867041/kartik-patel"><i
                                 class="fab fa-stack-overflow"></i></a></li>
-                    <li class="list-inline-item last-item"><a href="https://www.instagram.com/kp67201/"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="whatsapp://send?text=Hi%20Kartik&phone=+919594567913"><i
+                    <li id="instagramIcon" class="list-inline-item last-item"><a
+                            href="https://www.instagram.com/kp67201/"><i class="fab fa-instagram"></i></a></li>
+                    <li id="whatsappIcon" class="list-inline-item" style="display: none"><a
+                            href="whatsapp://send?text=Hi%20Kartik!&phone=+919594567913"><i
                                 class="fab fa-whatsapp"></i></a></li>
                 </ul>
             </div>
@@ -85,12 +73,12 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Write a brief intro about yourself. It's a good idea to include your personal interests
-                                and hobbies as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo
-                                ligula eget dolor. Aenean massa.</p>
-
+                            <p>
+                                Kartik Patel (kp) is an Application Developer who loves programming and focuses on
+                                writing clean, elegant and efficient code. He is a technology geek and follows the
+                                latest trends and patterns for building apps. He is always eager to work with new tech
+                                stacks, so when it comes to picking up a new framework or language isn't a problem.
+                            </p>
                         </div>
                         <!--//content-->
                     </div>
@@ -384,8 +372,9 @@
                                     India</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
                                         href="#">kartikpatel67201@gmail.com</a></li>
-                                <li><i class="fab fa-whatsapp"></i><span class="sr-only">whatsapp:</span><a
-                                        href="whatsapp://send?text=Hi%20Kartik!">Say
+                                <li id="whatsappIcon2" style="display: none"><i class="fab fa-whatsapp"></i><span
+                                        class="sr-only">whatsapp:</span><a
+                                        href="whatsapp://send?text=Hi%20Kartik!&phone=+919594567913">Say
                                         Hi to me!</a></li>
                             </ul>
                         </div>
@@ -399,67 +388,81 @@
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
+                            <!-- <p class="intro">
                                 Intro about your skills goes here. Keep the list lean and only show your primary
                                 skillset. You can always provide a link to your Linkedin or Coderwall profile so people
-                                can get more info there.</p>
+                                can get more info there.</p> -->
 
                             <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">Native Android<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                        <h3 class="level-title">Node.js &amp; Express.js<span class="level-label"
+                                                data-toggle="tooltip" data-placement="left" data-animation="true"
+                                                title="You can use the tooltip to explain more about your skill level..."><i
+                                                    class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="70%">
+                                            </div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                    <!--//item-->
+
+                                <div class="item">
+                                        <h3 class="level-title">Flutter <span class="level-label"
+                                                data-toggle="tooltip" data-placement="left" data-animation="true"
+                                                title="You can use the tooltip to explain more about your skill level..."><i
+                                                    class="fas fa-info-circle"></i>Beginner</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="40%">
+                                            </div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                    <!--//item-->
+
+                                <div class="item">
+                                        <h3 class="level-title">Angular 8<span class="level-label"
+                                                data-toggle="tooltip" data-placement="left" data-animation="true"
+                                                title="You can use the tooltip to explain more about your skill level..."><i
+                                                    class="fas fa-info-circle"></i>Beginner</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="30%">
+                                            </div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                    <!--//item-->
 
                                 <div class="item">
                                     <h3 class="level-title">Python &amp; Django<span class="level-label"
                                             data-toggle="tooltip" data-placement="left" data-animation="true"
                                             title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
+                                                class="fas fa-info-circle"></i>Beginner</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
+                                        <div class="level-bar-inner" data-level="30%">
                                         </div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
 
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
-                                        Coderwall</a></p>
+                                <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
+                                        Coderwall</a></p> -->
+                                        
                             </div>
                         </div>
                         <!--//content-->
@@ -468,7 +471,7 @@
                 </aside>
                 <!--//section-->
 
-                <aside class="testimonials aside section">
+                <!-- <aside class="testimonials aside section">
                     <div class="section-inner">
                         <h2 class="heading">Testimonials</h2>
                         <div class="content">
@@ -481,16 +484,13 @@
                                 <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur
                                         commodo</span></p>
                             </div>
-                            <!--//item-->
 
                             <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
                                     Linkedin</a></p>
 
                         </div>
-                        <!--//content-->
                     </div>
-                    <!--//section-inner-->
-                </aside>
+                </aside> -->
                 <!--//section-->
 
                 <aside class="education aside section">
@@ -498,14 +498,17 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BE Information Technology</h3>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BE in Information Technology
+                                </h3>
                                 <h4 class="university">Mumbai University<span class="year">(2015-2018)</span></h4>
                             </div>
                             <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
-                            </div>
+                            <!-- <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i>Diploma in Information
+                                    Technology</h3>
+                                <h4 class="university"> Maharashtra State Board <span class="year">(20012-2015)</span>
+                                </h4>
+                            </div> -->
                             <!--//item-->
                         </div>
                         <!--//content-->
@@ -677,6 +680,21 @@
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.getElementById('whatsappIcon').style.display = 'block';
+            document.getElementById('whatsappIcon2').style.display = 'block';
+            let instagramIcon = document.getElementById('instagramIcon');
+            instagramIcon.href = "instagram://user?username=kp67201"
+            let twitterIcon = document.getElementById('twitterIcon');
+            twitterIcon.href = "twitter://user?screen_name=kp67201"
+        }
+        /*else {
+            var element = document.getElementById('whatsappIcon').style.display = 'block';
+        }*/
+    </script>
 </body>
 
 </html>
