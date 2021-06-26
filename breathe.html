@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Redirecting ... </h2>
+    <!-- <h1><p id="userAgent"></p></h1>
+    <h1><p id="platform"></p></h1>
+    <h1><p id="mobile"></p></h1> -->
+    <script>
+        var userAgent = navigator.userAgent.toLowerCase();
+        console.log(userAgent)
+        console.log(navigator.platform)
+
+        var isMobile = /iphone|ipad|ipod|android/i.test(userAgent);
+        console.log(isMobile)
+
+        // safari = /safari/.test(userAgent);
+        var ios = /iphone|ipod|ipad|macintosh|mac/.test(userAgent);
+
+        // document.getElementById('userAgent').innerHTML = "User Agent: " + userAgent;
+        // document.getElementById('platform').innerHTML = "Platform: " + navigator.platform;
+        // document.getElementById('mobile').innerHTML = "Is Mobile: " + isMobile;
+
+        if (ios) {
+            location.replace("https://apps.apple.com/in/app/breathe-relax-focus/id1506712199")
+        } else {
+            location.replace("https://play.google.com/store/apps/details?id=com.havabee.breathe")
+        };
+
+    </script>
+
+</body>
+
+</html>
