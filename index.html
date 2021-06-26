@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kartik Patel - Android Developer">
+    <meta name="description" content="Kartik Patel - Software Engineer">
     <meta property="og:image"
         content="https://lh3.googleusercontent.com/-ZoFpNtxg-UM/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcyUtU_ZK2m7bPVesng5bfnJT9SCw/photo.jpg">
     <link rel="shortcut icon" href="favicon.ico">
@@ -141,6 +141,27 @@
             animation-duration: 1.5s;
         }
 
+        .wrapper {
+            /* width: 500px; */
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .roundedBox {
+            border-radius: 25px;
+            border: 2px solid #54ba4e;
+            padding: 20px;
+            /* width: 200px; */
+            /* height: 150px; */
+        }
+
+        .roundedBoxText {
+            color: 2px solid #54ba4e;
+            padding: 20px;
+        }
+
+
+
         @-webkit-keyframes fade {
             from {
                 opacity: .4
@@ -180,22 +201,31 @@
             <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
             <div class="profile-content float-left">
                 <h1 class="name">Kartik Patel</h1>
-                <h2 class="desc">Android Developer</h2>
+                <h2 class="desc">Software Engineer</h2>
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="https://play.google.com/store/apps/dev?id=7135905913091619860"
                             target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play"></i></a></li>
-                    <li id="twitterIcon" class="list-inline-item"><a href="https://twitter.com/kartikpatel_dev"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/kartik-patel-1747a5125"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/10867041/kartik-patel"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a></li>
+
                     <li class="list-inline-item"><a href="https://github.com/kp67201/" target="_blank"
                             rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
+
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/kartik-patel-1747a5125"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+
                     <li id="instagramIcon" class="list-inline-item last-item"><a
                             href="https://www.instagram.com/kartikpatel.dev/" target="_blank"
                             rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+
                     <li id="whatsappIcon" class="list-inline-item" style="display: none"><a
                             href="whatsapp://send?text=Hi%20Kartik!&phone=+919594567913" target="_blank"
                             rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a></li>
+
+                    <li id="twitterIcon" class="list-inline-item"><a href="https://twitter.com/kartikpatel_dev"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+
                 </ul>
             </div>
             <!--//profile-->
@@ -226,151 +256,11 @@
                 </section>
                 <!--//section-->
 
+                <!-- *************** Flutter Projects ******************* -->
                 <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Projects</h2>
+                        <h2 class="heading">Mobile Applications</h2>
                         <div class="content">
-
-
-                            <!-- <div class="item featured text-center">
-                                <h3 class="title"><a href="http://18.223.116.18/" target="_blank"
-                                        rel="noopener noreferrer">Perfect
-                                        Marketplace</a></h3>
-                                <p class="summary">The Virtual Real Estate (VRE).</p>
-                                <div class="featured-image has-ribbon">
-                                    <a href="http://18.223.116.18/" target="_blank" rel="noopener noreferrer">
-                                        <img class="img-fluid project-image" src="assets/images/perfect_home.png"
-                                            alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">Coming Soon</div>
-                                    </div>
-                                </div>
-
-                                <div class="desc text-left">
-                                    <p>Raise questions among your community, family, or locality,etc and find thier
-                                        choice. You can survey about anything and from any field. Reacted people on
-                                        your post can also have their explanation and they can also debate among
-                                        themselves. Users can also vote or comment anonymously.
-                                    </p>
-                                </div>
-                                <a class="btn btn-cta-secondary" href="http://18.223.116.18/" target="_blank"
-                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit Perfect</a>
-                            </div>
-                            <hr class="divider" /> -->
-
-
-                            <!-- ********************* SCANROID ********************* -->
-                            <div class="item featured text-center">
-
-                                <!-- <img src="https://dev.scanroid.com/assets/images/logoNav.svg" alt="scanroid_screen" height=50
-                                    width=100 style="float: left;"> -->
-                                <!-- <svg xmlns="https://dev.scanroid.com/assets/images/logoNav.svg">
-                                        <text x="10" y="50" font-size="30">My SVG</text>
-                                    </svg> -->
-                                <h3 class="title"><a href="https://scanroid.com/scanroid/" target="_blank"
-                                        rel="noopener noreferrer">ScanRoid</a></h3>
-
-                                <p class="summary">Document To Text At Lightning Speed</p>
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid" src="assets/images/scanroid.png" alt="project name" />
-                                    <div class="ribbon">
-                                        <div class="text">Coming Soon</div>
-                                    </div>
-                                </div>
-
-                                <div class="desc text-left">
-                                    <p>
-                                        ScanRoid is more than a data extractor. It's a complete data mapping solution.
-                                    </p>
-                                    <p>ScanRoid leverages the power of Artificial Intelligence and Machine Learning to
-                                        digitize the process of data extraction.
-                                        Convert data from offline forms and documents, and also from digital images,
-                                        into text-based digital data that is ready for consumption, in just one click.
-                                    </p>
-                                    <p>
-                                        The in-built Optical Character Recognition system extracts text from images and
-                                        the AI based engine then maps the extracted data to relevant fields making data
-                                        ready for consumption.
-                                        All you have to do is take a picture of a document or upload an image and
-                                        ScanRoid gives you structured online text in seconds.
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                                <a class="btn btn-cta-secondary" href="https://scanroid.com/scanroid/" target="_blank"
-                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit ScanRoid</a>
-                            </div>
-                            <hr class="divider" />
-                            <!-- ********************* SCANROID ********************* -->
-
-
-
-                            <!-- ********************* BOT360 ********************* -->
-                            <div class="item featured text-center">
-
-                                <h3 class="title"><a href="https://bot360.ai/" target="_blank"
-                                        rel="noopener noreferrer">Bot360</a></h3>
-
-                                <p class="summary">Unilateral platform for scheduling, conducting and evaluating
-                                    interviews.</p>
-                                <!-- <div class="featured-image">
-                                    <a href="https://scanroid.com/scanroid/" target="_blank" rel="noopener noreferrer">
-                                        <img class="img-fluid project-image" src="assets/images/bot360_1.png"
-                                            alt="project name" />
-                                    </a>
-                                </div> -->
-
-                                <div class="slideshow-container">
-
-                                    <div class="mySlides ">
-                                        <!-- <div class="numbertext">1 / 4</div> -->
-                                        <img src="assets/images/bot360_1.png" style="width:100%">
-                                        <div class="text">User Friendly Dashboard</div>
-                                    </div>
-
-                                    <div class="mySlides ">
-                                        <!-- <div class="numbertext">2 / 4</div> -->
-                                        <img src="assets/images/bot360_2.png" style="width:100%">
-                                        <div class="text">Candidates List with filters</div>
-                                    </div>
-
-                                    <div class="mySlides ">
-                                        <!-- <div class="numbertext">3 / 4</div> -->
-                                        <img src="assets/images/bot360_3.png" style="width:100%">
-                                        <div class="text">Video Calling, Sentiment Analysis, Screen Presentation,
-                                            Recording, Chatting, Code Editor, Colorful Whiteboard, Notepad</div>
-                                    </div>
-
-                                    <div class="mySlides ">
-                                        <!-- <div class="numbertext">4 / 4</div> -->
-                                        <img src="assets/images/bot360_4.png" style="width:100%">
-                                        <div class="text">Interview Report Generation</div>
-                                    </div>
-
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                </div>
-                                <br>
-
-                                <div style="text-align:center">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-
-                                <div class="desc text-left">
-                                    <p>
-                                        ScanRoid is more than a data extractor. It's a complete data mapping solution.
-                                    </p>
-                                </div>
-                                <a class="btn btn-cta-secondary" href="https://bot360.ai/" target="_blank"
-                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit Bot360</a>
-                            </div>
-                            <hr class="divider" />
-                            <!-- ********************* BOT360 ********************* -->
-
 
                             <!-- ********************* SaudaGhar ********************* -->
                             <div class="item featured text-center">
@@ -380,16 +270,66 @@
                                         SaudaGhar
                                     </a></h3>
                                 <p class="summary">Hyperlocal Grocery Delivery App.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid project-image" src="assets/images/aarti_sangrah.png"
-                                        alt="project name" />
-                                </a>
+                                <div class="wrapper">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/customer_home.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/merchant_home.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/store_registration.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/place_order.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/order_placed.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/register.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/otp.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/profile.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/signin.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/saudaghar/order_list.png" alt="project name" />
+                                    </div>
+                                </div>
                                 <div class="desc text-left">
-                                    <p>Aarti Sangrah is an aarti app and easy to use. You can add your own
-                                        aarti in database and can edit existing aartis in database. You can also create
-                                        your own list of aartis which can contain any number of aarti and in any
-                                        sequence.
+                                    <p>SaudaGhar is a free app that creates a bridge between consumers & nearby
+                                        merchants, stores, shops, markets, etc. Consumers can locate shops and stores
+                                        that are open near them and place an order directly from the app, and merchants
+                                        can reach out to consumers looking for supplies by listing their store’s status
+                                        (serving/not-serving, home-delivery option, etc) and the list of items available
+                                        in-store. Saudaghar was developed to help people buy groceries and utilities
+                                        during the Covid-19 crisis.
                                     </p>
                                 </div>
                             </div>
@@ -407,11 +347,42 @@
                                     </a></h3>
                                 <p class="summary">AI based image processing module for
                                     logistics and warehousing management.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid project-image" src="assets/images/aarti_sangrah.png"
-                                        alt="project name" />
-                                </a>
+                                <div class="wrapper">
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/username.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/password.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/capture.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/summary.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/dashboard.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/details.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/packcount/profile.png" alt="project name" />
+                                    </div>
+                                </div>
                                 <div class="desc text-left">
                                     <p>Our solution programatically calculates the
                                         number of items in the image through AI.
@@ -460,17 +431,76 @@
 
                             <!-- ********************* My PackBook ********************* -->
                             <div class="item featured text-center">
-                                <h3 class="title"><a
-                                        href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                        target="_blank" rel="noopener noreferrer">
-                                        My PackBook
-                                    </a></h3>
+                                <h3 class="title">
+                                    My PackBook</h3>
                                 <p class="summary">Hyperlocal Grocery Delivery App.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid project-image" src="assets/images/aarti_sangrah.png"
-                                        alt="project name" />
-                                </a>
+                                <div class="wrapper">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 10px 10px 10px 10px; height: 550px;"
+                                            src="assets/images/mypackbook/signin.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/home.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/goods.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/goods_issue_list.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/issue_form.jpg" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/submit.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/signpad.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/output.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/scan.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/account_form.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/accept_list.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/language.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style=" padding: 0px 10px 0px 10px; height: 600px;"
+                                            src="assets/images/mypackbook/more.png" alt="project name" />
+                                    </div>
+                                </div>
                                 <div class="desc text-left">
                                     <p>Aarti Sangrah is an aarti app and easy to use. You can add your own
                                         aarti in database and can edit existing aartis in database. You can also create
@@ -482,41 +512,6 @@
                             <!--//item-->
                             <hr class="divider" />
                             <!-- ********************* My PackBook ********************* -->
-
-
-                            <!-- ********************* Alchemy ********************* -->
-                            <div class="item featured text-center">
-                                <h3 class="title"><a
-                                        href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                        target="_blank" rel="noopener noreferrer">
-                                        Alchemy
-                                    </a></h3>
-                                <p class="summary">Talent acquisition & recruiting process management application.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid project-image" src="assets/images/aarti_sangrah.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc text-left">
-                                    <p>Alchemy is a talent acquisition & recruitment, and corporate training services
-                                        company. With thousands of candidate portfolios on-boarded, they were looking
-                                        for a digital solution to manage all their services, which were previously being
-                                        handled manually.
-
-                                        Getafix designed & developed an end-to-end organization management web
-                                        application that digitized & synced all internal processes & departments -
-                                        Recruitment, BG verification, HR, Portfolio Management, and Payroll.
-                                        <br>
-                                        <br>
-                                        <strong>Solutions Provided:</strong> UI/UX, Web App with a Portal & Backend
-                                        Admin Panel built on
-                                        Python, AngularJS,
-                                    </p>
-                                </div>
-                            </div>
-                            <!--//item-->
-                            <hr class="divider" />
-                            <!-- ********************* Alchemy ********************* -->
 
 
                             <!-- ********************* Aarti Sangrah ********************* -->
@@ -546,6 +541,213 @@
                             <hr class="divider" />
                             <!-- ********************* Aarti Sangrah ********************* -->
 
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!-- *************** Flutter Projects ******************* -->
+
+                <!-- *************** Django Projects ******************* -->
+                <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Backend Projects</h2>
+                        <div class="content">
+
+
+                            <!-- <div class="item featured text-center">
+                                <h3 class="title"><a href="http://18.223.116.18/" target="_blank"
+                                        rel="noopener noreferrer">Perfect
+                                        Marketplace</a></h3>
+                                <p class="summary">The Virtual Real Estate (VRE).</p>
+                                <div class="featured-image has-ribbon">
+                                    <a href="http://18.223.116.18/" target="_blank" rel="noopener noreferrer">
+                                        <img class="img-fluid project-image" src="assets/images/perfect_home.png"
+                                            alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Coming Soon</div>
+                                    </div>
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p>Raise questions among your community, family, or locality,etc and find thier
+                                        choice. You can survey about anything and from any field. Reacted people on
+                                        your post can also have their explanation and they can also debate among
+                                        themselves. Users can also vote or comment anonymously.
+                                    </p>
+                                </div>
+                                <a class="btn btn-cta-secondary" href="http://18.223.116.18/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit Perfect</a>
+                            </div>
+                            <hr class="divider" /> -->
+
+
+                            <!-- ********************* SCANROID ********************* -->
+                            <div class="item featured text-center">
+
+                                <!-- <img src="https://dev.scanroid.com/assets/images/logoNav.svg" alt="scanroid_screen" height=50
+                                    width=100 style="float: left;"> -->
+                                <!-- <svg xmlns="https://dev.scanroid.com/assets/images/logoNav.svg">
+                                        <text x="10" y="50" font-size="30">My SVG</text>
+                                    </svg> -->
+                                <h3 class="title"><a href="https://scanroid.com/scanroid/" target="_blank"
+                                        rel="noopener noreferrer">ScanRoid</a></h3>
+
+                                <p class="summary">Document To Text At Lightning Speed</p>
+                                <div class="wrapper">
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px;"
+                                            src="assets/images/scanroid/1.png" alt="project name" />
+                                        <!-- <div class="ribbon">
+                                            <div class="text">NEW</div>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px;"
+                                            src="assets/images/scanroid/2.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px;"
+                                            src="assets/images/scanroid/3.png" alt="project name" />
+                                    </div>
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid" style="padding: 0px 10px 0px 10px;"
+                                            src="assets/images/scanroid/4.png" alt="project name" />
+                                    </div>
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p>
+                                        ScanRoid is more than a data extractor. It's a complete data mapping solution.
+                                    </p>
+                                    <p>ScanRoid leverages the power of Artificial Intelligence and Machine Learning to
+                                        digitize the process of data extraction.
+                                        Convert data from offline forms and documents, and also from digital images,
+                                        into text-based digital data that is ready for consumption, in just one click.
+                                    </p>
+                                    <p>
+                                        The in-built Optical Character Recognition system extracts text from images and
+                                        the AI based engine then maps the extracted data to relevant fields making data
+                                        ready for consumption.
+                                        All you have to do is take a picture of a document or upload an image and
+                                        ScanRoid gives you structured online text in seconds.
+                                    </p>
+                                </div>
+                                <!--//desc-->
+                                <a class="btn btn-cta-secondary" href="https://scanroid.com/scanroid/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit ScanRoid</a>
+                            </div>
+                            <hr class="divider" />
+                            <!-- ********************* SCANROID ********************* -->
+
+
+
+                            <!-- ********************* BOT360 ********************* -->
+                            <div class="item featured text-center">
+
+                                <h3 class="title"><a href="https://bot360.ai/" target="_blank"
+                                        rel="noopener noreferrer">Bot360</a></h3>
+
+                                <p class="summary">Unilateral platform for scheduling, conducting and evaluating
+                                    interviews.</p>
+                                <!-- <div class="featured-image">
+                                    <a href="https://scanroid.com/scanroid/" target="_blank" rel="noopener noreferrer">
+                                        <img class="img-fluid project-image" src="assets/images/bot360_1.png"
+                                            alt="project name" />
+                                    </a>
+                                </div> -->
+
+                                <div class="slideshow-container">
+
+                                    <div class="mySlides ">
+                                        <!-- <div class="numbertext">1 / 4</div> -->
+                                        <img src="assets/images/bot360/1.png" style="width:100%">
+                                        <div class="text">User Friendly Dashboard</div>
+                                    </div>
+
+                                    <div class="mySlides ">
+                                        <!-- <div class="numbertext">2 / 4</div> -->
+                                        <img src="assets/images/bot360/2.png" style="width:100%">
+                                        <div class="text">Candidates Dashboard with Auto-populated fields</div>
+                                    </div>
+
+                                    <div class="mySlides ">
+                                        <!-- <div class="numbertext">3 / 4</div> -->
+                                        <img src="assets/images/bot360/3.png" style="width:100%">
+                                        <div class="text">Video Calling, Sentiment Analysis, Screen Presentation,
+                                            Recording, Chatting, Code Editor, Colorful Whiteboard, Notepad</div>
+                                    </div>
+
+                                    <div class="mySlides ">
+                                        <!-- <div class="numbertext">4 / 4</div> -->
+                                        <img src="assets/images/bot360/4.png" style="width:100%">
+                                        <div class="text">Interview Report Generation</div>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                </div>
+                                <br>
+
+                                <div style="text-align:center">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p>
+                                        ScanRoid is more than a data extractor. It's a complete data mapping solution.
+                                    </p>
+                                </div>
+                                <a class="btn btn-cta-secondary" href="https://bot360.ai/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fas fa-thumbs-up"></i> Visit Bot360</a>
+                            </div>
+                            <hr class="divider" />
+                            <!-- ********************* BOT360 ********************* -->
+
+
+                            <!-- ********************* Alchemy ********************* -->
+                            <div class="item featured text-center">
+                                <h3 class="title"><a
+                                        href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
+                                        target="_blank" rel="noopener noreferrer">
+                                        Alchemy
+                                    </a></h3>
+                                <p class="summary">Talent acquisition & recruiting process management application.</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid project-image" src="assets/images/alchemy.jpg"
+                                        alt="project name" />
+                                </a>
+                                <div class="desc text-left">
+                                    <p>Alchemy is a talent acquisition & recruitment, and corporate training services
+                                        company. With thousands of candidate portfolios on-boarded, they were looking
+                                        for a digital solution to manage all their services, which were previously being
+                                        handled manually.
+                                    </p>
+                                    <p>
+                                        Getafix designed & developed an end-to-end organization management web
+                                        application that digitized & synced all internal processes & departments -
+                                        Recruitment, BG verification, HR, Portfolio Management, and Payroll.
+                                    </p>
+                                    </p>
+                                    <strong>Solutions Provided:</strong> UI/UX, Web App with a Portal & Backend
+                                    Admin Panel built on
+                                    Python, AngularJS,
+                                    </p>
+                                </div>
+                            </div>
+                            <!--//item-->
+                            <hr class="divider" />
+                            <!-- ********************* Alchemy ********************* -->
+
 
                             <!-- ********************* Exam Portal CRM ********************* -->
                             <!-- <div class="item featured text-center">
@@ -568,7 +770,7 @@
                     </div>
                     <!--//section-inner-->
                 </section>
-                <!--//section-->
+                <!-- *************** Flutter Projects ******************* -->
 
                 <section class="experience section">
                     <div class="section-inner">
@@ -603,6 +805,33 @@
             </div>
             <!--//primary-->
             <div class="secondary col-lg-4 col-12">
+
+
+                <!--//Basic info section-->
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading ">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Mumbai,
+                                    India</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="mailto:me@kartikpatel.dev" target="_blank"
+                                        rel="noopener noreferrer">me@kartikpatel.dev</a></li>
+                                <li id="whatsappIcon2" style="display: none"><i class="fab fa-whatsapp"></i><span
+                                        class="sr-only">whatsapp:</span><a
+                                        href="whatsapp://send?text=Hi%20Kartik!&phone=+919594567913" target="_blank"
+                                        rel="noopener noreferrer">Say
+                                        Hi to me!</a></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Basic info section-->
+
+
 
                 <!--//Skill section-->
                 <aside class="skills aside section">
@@ -876,31 +1105,6 @@
                         </div>
                     </div>
                 </aside>
-
-
-                <!--//Basic info section-->
-                <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading ">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Mumbai,
-                                    India</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="mailto:me@kartikpatel.dev" target="_blank"
-                                        rel="noopener noreferrer">me@kartikpatel.dev</a></li>
-                                <li id="whatsappIcon2" style="display: none"><i class="fab fa-whatsapp"></i><span
-                                        class="sr-only">whatsapp:</span><a
-                                        href="whatsapp://send?text=Hi%20Kartik!&phone=+919594567913" target="_blank"
-                                        rel="noopener noreferrer">Say
-                                        Hi to me!</a></li>
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//Basic info section-->
 
 
 
