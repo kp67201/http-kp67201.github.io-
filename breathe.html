@@ -11,21 +11,27 @@
         console.log(userAgent)
         console.log(navigator.platform)
 
-        var isMobile = /iphone|ipad|ipod|android/i.test(userAgent);
-        console.log(isMobile)
+        // var isMobile = /iphone|ipad|ipod|android/i.test(userAgent);
+        // console.log(isMobile)
 
         // safari = /safari/.test(userAgent);
-        var ios = /iphone|ipod|ipad|macintosh|mac/.test(userAgent);
+        var iosMobile = /iphone|ipod|ipad/.test(userAgent);
+        var iosDesktop = /macintosh/.test(userAgent);
+        var androidMobile = /android/.test(userAgent);
 
         // document.getElementById('userAgent').innerHTML = "User Agent: " + userAgent;
         // document.getElementById('platform').innerHTML = "Platform: " + navigator.platform;
         // document.getElementById('mobile').innerHTML = "Is Mobile: " + isMobile;
 
-        if (ios) {
+        if (iosMobile) {
             location.replace("https://apps.apple.com/in/app/breathe-relax-focus/id1506712199")
-        } else {
+        } else if (androidMobile) {
             location.replace("https://play.google.com/store/apps/details?id=com.havabee.breathe")
-        };
+        } else if (iosDesktop) {
+            location.replace("https://havabee.com/")
+        }else {
+            location.replace("https://havabee.com/")
+        }
 
     </script>
 
