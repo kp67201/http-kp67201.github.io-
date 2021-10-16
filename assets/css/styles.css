@@ -828,15 +828,3 @@ body[data-theme="dark"] .text-muted {
     max-width: inherit;
   }
 }
-
-  
-svg{
-  width: 200px;
-  height: 100%;
-  visibility:hidden;
-}
-
-.hit{
- cursor:pointer;
- -webkit-tap-highlight-color:transparent;
-}
